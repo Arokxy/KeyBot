@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css?family=Audiowide');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+.rech-icon img {
+    padding-top: 15px;
+}
+
+
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+.onglets {
+    display: flex;
+    flex-direction: row;
+    position: sticky;
+    top: 0;
+    gap: 30px;
+    background-color: black;
+    width: 100%;
+    box-sizing: border-box;
+    color: white;
+    justify-content: space-between;
+}
+
+.comp {
+    display: flex;
+    flex-direction: row;
+}
+
+.recherche {
+    display: flex;
+    flex-direction: row;
+    padding-right: 30px;
+}
+
+.logo {
+    cursor: pointer;
+    height: 70px;
+    width: 70px;
+}
+
+nav {
+    position: sticky;
+    top: 0;
+}
+
+.texte {
+    font-family: "Audiowide", sans-serif;
+}
+
+
+nav h1 {
+    font-family: "Audiowide", sans-serif;
+    color: white;
+    font-size: 24px;
+}
+
+.barre input {
+    margin-top: 15px;
+    padding: 10px 20px;
+    border-radius: 30px;
+    border: none;
+    outline: none;
+}
+
+.panier {
+    padding-top: 15px;
+    padding-left: 20px;
+}
+
+.clavier {
+    text-decoration: none;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    padding-right: 40px;
+    font-size: 15px;
+}
+
+.shop {
+    font-size: 30px;
+    font-family: "Montserrat", sans-serif;
+    padding: 10px;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    background-color: #000000;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    margin-top: 105px;
+    padding: 20px;
+}
+
+footer .left {
+    text-align: left;
+}
+
+footer .right {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: flex-end;
+}
+
+footer img {
+    max-width: 100px;
+    height: auto;
+}
+
+.tiktok {
+    padding-right: 8px;
+}
+
+table tr td img {
+    border-top-left-radius: 20px;
+    padding: 10px;
+}
+
+.basdepage {
+    display: flex;
+    flex-direction: column;
+    min-height: 87vh;
+}
+
+section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    justify-content: flex-start;
+}
+
+.main {
+    justify-content: center;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    font-size: 20px;
+    font-family: "Montserrat", sans-serif;
+}
+
+th {
+    padding: 10px 0;
+    font-weight: 400;
+}
+
+td {
+    border-top: 0.5px solid #71717171;
+    text-align: center;
+}
+
+tr {
+    border-bottom: 0.5px solid #71717171;
+}
+
+.total {
+    border: 0px;
+    float: left;
+    font-weight: 500px;
+}
+
+
+@media screen and (min-width: 1000px) {
+    .rech-icon {
+        display: none;
+        cursor: pointer;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .texte {
+        display: none;
+    }
+
+    .onglets {
+        gap: 40px;
+        justify-content: space-between;
+    }
+
+    .clavier {
+        font-size: 15px;
+        padding-right: 10px;
+        margin-right: 20px;
+    }
+
+    .barre input {
+        width: 120px;
+        padding-top: 30px 20px;
+    }
+
+    .rech-field {
+        display: none;
+    }
+
+    .logo img {
+        height: 59px;
+        width: 59px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    body {
+        width: 380px;
+    }
+}

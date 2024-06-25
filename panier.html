@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial scale=1.0">
+    <title>Panier KeyBot</title>
+    <link rel="stylesheet" href="stylenav.css">
+</head>
+<body>
+<nav>
+    <div class="onglets">
+        <div class="comp">
+            <a class="logo"
+               href="index.html"><img
+                    alt="Logo" src="kb.jpg" height="70" width="70"/></a>
+            <h1 class="texte">KeyBot</h1>
+        </div>
+        <div class="recherche">
+            <a class="clavier" href="clavierpage.html">
+                <h2>Claviers</h2>
+            </a>
+            <form class="barre">
+                <label class="rech-field">
+                    <input type="search" placeholder="Recherche">
+                </label>
+                <a class="rech-icon"><img src="loupe.png" height="30" width="30"/></a>
+            </form>
+            <div class="panier">
+                <a href="panier.html"><img alt="Panier" src="paier_noir-.png" height="30" width="30"/></a>
+            </div>
+        </div>
+    </div>
+</nav>
+<h1 class="shop">Votre panier :</h1>
+<div class="basdepage">
+    <section>
+        <?php
+        include_once "con_bdd.php"
+        ?>
+        <table>
+            <tr>
+                <th></th>
+                <th>Nom</th>
+                <th>Prix</th>
+                <th>Quantité</th>
+                <th>Supprimer</th>
+                <th>Lien</th>
+            </tr>
+            <tr>
+                <td><img src="logitechmx.webp" height="150" width="250"/></td>
+                <td>MX KEYS S</td>
+                <td>120€</td>
+                <td>3</td>
+                <td><img src="poubelle.png" height="40" width="40"/></td>
+                <td>
+                    <a href="https://www.amazon.fr/">
+                        <img src="amazon.png" height="50" width="50"/>
+                    </a>
+                </td>
+            </tr>
+            <tr class="total">
+                <th>Total : 360€</th>
+            </tr>
+        </table>
+    </section>
+
+
+    <footer>
+        <div class="left">
+            <div class="copy">
+                <h3>© KeyBot depuis 2024 par Joshua. Tout droit réservé. </h3>
+            </div>
+            <div class="Contact">
+                <h3>Contact : 06 50 40 30 20</h3>
+            </div>
+            <div class="Livraison">
+                <h3>Livraison gratuite.</h3>
+            </div>
+            <div class="Collab">
+                <h3>En collaboration avec HIIT.</h3>
+            </div>
+            <div class="Soutien">
+                <h3>Merci pour vote soutien !</h3>
+            </div>
+        </div>
+        <div class="right">
+            <a href="https://www.facebook.com/?locale=fr_FR"><img alt="facebook" src="face.webp" height="40"
+                                                                  width="40"/></a>
+            <a href="https://www.instagram.com/"><img alt="insta" src="insta.png" height="40" width="40"/></a>
+            <a href="https://x.com/?lang=fr"><img alt="twitter" src="bird.png" height="40" width="40"/></a>
+            <div class="tiktok">
+                <a href="https://www.tiktok.com/discover?lang=fr"><img src="tiktok__1_-removebg-preview (1).png"
+                                                                       height="28"
+                                                                       width="28"/></a>
+            </div>
+        </div>
+    </footer>
+</div>
+</body>
+</html>
