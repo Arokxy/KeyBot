@@ -78,6 +78,10 @@ text {
     justify-content: space-around;
 }
 
+.key {
+    text-decoration: none;
+}
+
 .head {
     margin-top: 10px;
     display: flex;

@@ -52,6 +52,9 @@ nav {
     font-family: "Audiowide", sans-serif;
 }
 
+.key {
+    text-decoration: none;
+}
 
 nav h1 {
     font-family: "Audiowide", sans-serif;
@@ -132,7 +135,7 @@ section {
     align-items: center;
     justify-content: center;
     flex: 1;
-    justify-content: flex-start;
+
 }
 
 .main {
@@ -161,11 +164,104 @@ tr {
 }
 
 .total {
+    padding-left: 10px;
     border: 0px;
     float: left;
-    font-weight: 500px;
+    font-weight: 500;
 }
 
+.paypal {
+    border: 0px;
+    float: left;
+    font-weight: 500;
+}
+
+.paye {
+    margin-left: 10px;
+    background-color: #f5c30b;
+    width: 400px;
+    cursor: pointer;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    border: none;
+    outline: none;
+    align-items: center;
+}
+
+
+.nobottom {
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+}
+
+.paye img {
+    padding-left: 10px;
+}
+
+.nobor {
+    border: 0px;
+}
+
+.bot {
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 25px;
+}
+
+barre {
+    background-color: white;
+}
+
+barre ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+barre ul li {
+    position: relative;
+}
+
+barre ul li a {
+    display: block;
+    padding: 15px 20px;
+    color: black;
+    text-decoration: none;
+}
+
+barre ul li a:hover {
+    background-color: #555;
+}
+
+/* Sous-menus */
+barre ul ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #444;
+    padding: 0;
+}
+
+barre ul ul li {
+    width: 200px;
+}
+
+barre ul ul li a {
+    padding: 10px 15px;
+}
+
+barre ul ul li a:hover {
+    background-color: #555;
+}
+
+/* Afficher les sous-menus au survol */
+barre ul li:hover > ul {
+    display: block;
+}
 
 @media screen and (min-width: 1000px) {
     .rech-icon {
