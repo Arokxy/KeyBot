@@ -3,6 +3,7 @@
 session_start();
 ?>
 
+
 <html xmlns="http://www.w3.org/1999/html" lang="fr-FR">
 <head>
     <meta charset="UTF-8">
@@ -22,7 +23,7 @@ session_start();
             <a href="bot.php" class="key"><h1 class="texte">KeyBot</h1></a>
         </div>
         <div class="recherche">
-            <a class="clavier" href="clavierpage.html">
+            <a class="clavier" href="clavierpage.php">
                 <h2>Claviers</h2>
             </a>
             <form class="barre">
@@ -36,7 +37,7 @@ session_start();
                                           src="paier_noir-.png"
                                           height="30"
                                           width="30"/></a>
-                <span><?= array_sum($_SESSION['Lepanier']) ?></span>
+                <span><?= array_sum($_SESSION['lepanier']) ?></span>
             </div>
         </div>
     </div>
