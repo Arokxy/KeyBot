@@ -204,7 +204,7 @@ tr {
     border: 0px;
 }
 
-.bot {
+.bott {
     display: flex;
     justify-content: space-evenly;
     font-size: 25px;
@@ -215,9 +215,6 @@ barre {
     background-color: black;
 }
 
-barre li {
-    align-items: center;
-}
 
 barre ul {
     list-style: none;

@@ -32,7 +32,7 @@ include_once "con_bdd.php";
             </form>
             <div class="panier">
                 <a href="panier.php"><img alt="Panier" src="paier_noir-.png" height="30" width="30"/></a>
-                <!--                <span>--><?php //= array_sum($_SESSION['lepanier']) ?><!--</span>-->
+                <span><?= array_sum($_SESSION['lepanier']) ?></span>
             </div>
         </div>
     </div>

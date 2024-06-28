@@ -30,14 +30,14 @@ session_start();
             </form>
             <div class="panier">
                 <a href="panier.php"><img alt="Panier" src="paier_noir-.png" height="30" width="30"/></a>
-                <!--                <span>--><?php //= array_sum($_SESSION['lepanier']) ?><!--</span>-->
+                <span><?= array_sum($_SESSION['lepanier']) ?></span>
             </div>
         </div>
     </div>
 </nav>
 <barre>
 
-    <ul class="bot">
+    <ul class="bott">
         <li><img src="thumb-up.jpg" height="100" width="100"></li>
         <li>
             <a href="#">Utilisation</a>
