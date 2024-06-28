@@ -4,9 +4,9 @@ include_once "con_bdd.php";
 if (!isset($_SESSION)) {
     session_start();
 }
-if (!isset($_SESSION['Lepanier'])) {
+if (!isset($_SESSION['lepanier'])) {
 
-    $_SESSION['Lepanier'] = array();
+    $_SESSION['lepanier'] = array();
 }
 
 if (isset($_GET['id'])) {
@@ -15,11 +15,11 @@ if (isset($_GET['id'])) {
     if (empty(mysqli_fetch_assoc($produit))) {
         die("Ce produit n'existe pas");
     }
-    if (isset($_SESSION['Lepanier'][$id])) {
-        $_SESSION['Lepanier'][$id]++;
-        var_dump($_SESSION['Lepanier']);
+    if (isset($_SESSION['lepanier'][$id])) {
+        $_SESSION['lepanier'][$id]++;
+        var_dump($_SESSION['lepanier']);
     } else {
-        $_SESSION['Lepanier'][$id] = 1;
+        $_SESSION['lepanier'][$id] = 1;
     }
     header("Location:clavierpage.php");
 

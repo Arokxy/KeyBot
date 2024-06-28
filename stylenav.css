@@ -208,10 +208,15 @@ tr {
     display: flex;
     justify-content: space-evenly;
     font-size: 25px;
+    background-color: black;
 }
 
 barre {
-    background-color: white;
+    background-color: black;
+}
+
+barre li {
+    align-items: center;
 }
 
 barre ul {
@@ -223,17 +228,19 @@ barre ul {
 
 barre ul li {
     position: relative;
+    border: white;
 }
 
 barre ul li a {
     display: block;
-    padding: 15px 20px;
-    color: black;
+    padding: 30px;
+    color: white;
     text-decoration: none;
+    font-size: 30px;
 }
 
 barre ul li a:hover {
-    background-color: #555;
+    background-color: rebeccapurple;
 }
 
 /* Sous-menus */
@@ -242,7 +249,7 @@ barre ul ul {
     position: absolute;
     top: 100%;
     left: 0;
-    background-color: #444;
+    background-color: black;
     padding: 0;
 }
 
@@ -255,7 +262,7 @@ barre ul ul li a {
 }
 
 barre ul ul li a:hover {
-    background-color: #555;
+    background-color: rebeccapurple;
 }
 
 /* Afficher les sous-menus au survol */
@@ -288,7 +295,7 @@ barre ul li:hover > ul {
 
     .barre input {
         width: 120px;
-        padding-top: 30px 20px;
+        padding-top: 30px;
     }
 
     .rech-field {

@@ -32,7 +32,7 @@ session_start();
             </form>
             <div class="panier">
                 <a href="panier.php"><img alt="Panier" src="paier_noir-.png" height="30" width="30"/></a>
-                <span><?= array_sum($_SESSION['Lepanier']) ?></span>
+                <!--                <span>--><?php //= array_sum($_SESSION['lepanier']) ?><!--</span>-->
 
             </div>
         </div>

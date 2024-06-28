@@ -1,4 +1,5 @@
 <?php
+global $con;
 session_start();
 include_once "con_bdd.php";
 ?>
@@ -31,7 +32,7 @@ include_once "con_bdd.php";
             </form>
             <div class="panier">
                 <a href="panier.php"><img alt="Panier" src="paier_noir-.png" height="30" width="30"/></a>
-                <span><?= array_sum($_SESSION['Lepanier']) ?></span>
+                <!--                <span>--><?php //= array_sum($_SESSION['lepanier']) ?><!--</span>-->
             </div>
         </div>
     </div>
@@ -43,10 +44,10 @@ include_once "con_bdd.php";
         include_once "con_bdd.php";
         if (isset($_GET['del'])) {
             $id_del = $_GET['del'];
-            unset($_SESSION['Lepanier'][$id_del]);
+            unset($_SESSION['lepanier'][$id_del]);
         }
 
-        $ids = array_keys($_SESSION['Lepanier']);
+        $ids = array_keys($_SESSION['lepanier']);
         if (!empty($ids)) {
 
             ?>
@@ -64,13 +65,13 @@ include_once "con_bdd.php";
                 if (!empty($ids)) {
                     $produits = mysqli_query($con, "SELECT * FROM produits WHERE id IN (" . implode(',', $ids) . ")");
                     foreach ($produits as $produit):
-                        $total = $total + $produit['price'] * $_SESSION['Lepanier'][$produit['id']];
+                        $total = $total + $produit['price'] * $_SESSION['lepanier'][$produit['id']];
                         ?>
                         <tr>
                             <td><img src="<?= $produit['img'] ?>" height="150" width="250"/></td>
                             <td><?= $produit['name'] ?></td>
                             <td><?= $produit['price'] ?>€</td>
-                            <td><?= $_SESSION['Lepanier'][$produit['id']] ?></td>
+                            <td><?= $_SESSION['lepanier'][$produit['id']] ?></td>
                             <td>
                                 <a href="panier.php?del=<?= $produit['id'] ?>"><img src="poubelle.png" height="40"
                                                                                     width="40"/></a>
